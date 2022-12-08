@@ -1,0 +1,13 @@
+- name: Set an environment variable for all users
+  win_environment:
+    state: present
+    name: HWC
+    value: HelloWorld
+    level: machine
+
+  -name: "Local Run"
+   hosts: 127.0.0.1
+   connection: local
+   tasks:
+     - debug:
+         msg: "Hello World"
