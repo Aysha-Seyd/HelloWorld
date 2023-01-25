@@ -1,8 +1,6 @@
 - name: My first play
-  hosts: virtualmachines
+  hosts: 127.0.0.1
   tasks:
-   - name: Ping my hosts
-     ansible.builtin.ping:
    - name: Print message
      ansible.builtin.debug:
        msg: Hello world
