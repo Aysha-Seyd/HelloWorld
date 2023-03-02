@@ -3,6 +3,6 @@ resource "local_file" "Hello_World" {
   filename = "app.py"
 }
 
-output "log_message" {
-  value = "./app.py"
+output "logginginfo" {
+  value = "./usr/local/bin/python3 /Users/Aysha.Seyd/Desktop/GitHub/HelloWorld/app.py"
 }
